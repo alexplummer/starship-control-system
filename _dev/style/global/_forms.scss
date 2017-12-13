@@ -1,0 +1,13 @@
+
+// Forms
+// ============
+// Global form styles
+
+form {
+    @extend .pure-form;
+
+    input[type="text"] {
+        line-height: $font-baseline;
+        padding: $size-s $size-xs;
+    }
+}

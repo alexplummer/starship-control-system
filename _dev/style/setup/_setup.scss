@@ -1,0 +1,142 @@
+
+// Colour palette
+// ============
+// Colour scheme variables
+
+$clr-primary:   #7CCFFD;
+$clr-secondary: #009DC9;
+$clr-tertiary:  #80007F;
+$clr-hlight:    #FFD68B;
+$clr-shade:     #CF8600;
+
+$clr-link: #ECCC6B;
+$clr-link-hover: lighten($clr-link, 10%);
+
+$clr-light:   #E6EAF0;
+$clr-lighter: #EEEEEE;
+$clr-dark:    #243B5A;
+$clr-darker:  #141D2B;
+
+$clr-primary-textoverlay:   $clr-darker;
+$clr-secondary-textoverlay: #FFFFFF;
+$clr-tertiary-textoverlay:  #FFFFFF;
+$clr-hlight-textoverlay:    $clr-darker;
+$clr-shade-textoverlay:     $clr-darker;
+
+
+// Font families
+// ============
+// Font family definitions
+
+$font-header: 'Unica One', sans-serif;
+$font-body:   'Comfortaa', sans-serif;
+$font-quote:  'Comfortaa', sans-serif;
+
+// Modify irregular xheight fonts
+$xheight-header: 1;
+$xheight-body:   1;
+
+
+// Scales
+// ============
+// Scales used for type and spacing (/16)
+
+// Font sizes
+$font-xxxl: /* 96px */ 6      * 1rem;
+$font-xxl:  /* 48px */ 3      * 1rem;
+$font-xl:   /* 36px */ 2.25   * 1rem;
+$font-l:    /* 24px */ 1.5    * 1rem;
+$font-m:    /* 18px */ 1.125  * 1rem;
+$font-s:    /* 16px */ 1      * 1rem;
+$font-xs:   /* 12px */ 0.75   * 1rem;
+$font-xxs:  /*  9px */ 0.5625 * 1rem;
+
+// Baseline
+$font-size-body: $font-m;
+$font-baseline: $font-size-body * 1.5;
+
+// Distances
+$size-xl: /* 96px */  $font-baseline * 4;
+$size-l:  /* 48px */  $font-baseline * 2;
+$size-m:  /* 24px */  $font-baseline;
+$size-s:  /* 12px */  $font-baseline / 2;
+$size-xs: /*  6px */  $font-baseline / 4;
+
+
+// Heading sizes
+// ============
+// Sizes for headings based on the font scale
+
+// Desktop
+$font-h1-desktop: $font-xxl;
+$font-h2-desktop: $font-xl;
+$font-h3-desktop: $font-l;
+$font-h4-desktop: $font-l;
+$font-h5-desktop: $font-m;
+
+// Tablet
+$font-h1-tablet: $font-xl;
+$font-h2-tablet: $font-l;
+$font-h3-tablet: $font-l;
+$font-h4-tablet: $font-m;
+$font-h5-tablet: $font-s;
+
+// Mobile
+$font-h1-mobile: $font-l;
+$font-h2-mobile: $font-l;
+$font-h3-mobile: $font-l;
+$font-h4-mobile: $font-m;
+$font-h5-mobile: $font-s;
+
+
+// Body sizes
+// ============
+// Sizes for non-header elements
+
+// Desktop
+$font-body-desktop: $font-size-body;
+
+// Tablet
+$font-body-tablet: $font-size-body;
+
+// Mobile
+$font-body-mobile: $font-size-body;
+
+
+// Grid
+// ============
+// Used to setup the flexbox grid
+
+// Breakpoints
+$mobile:  480px;
+$tablet:  768px;
+$laptop:  992px;
+$desktop: 1200px;
+$max:     1400px;
+
+// Breakpoints max
+$mobile-max:  $tablet - 1px;
+$tablet-max:  $laptop - 1px;
+$laptop-max: $desktop - 1px;
+
+// Containers
+$container-tablet:  100%;
+$container-laptop:  100%;
+$container-desktop: 100%;
+$container-max: 1376px;
+
+// Columns & margins
+$grid-columns: 12;
+$gutter-width: $size-l;
+$outer-margin: $size-m;
+
+
+// Z-index
+// ============
+// Structured Z-index
+
+$z-max: 1000;
+$z-l: 100;
+$z-m: 50;
+$z-s: 10;
+$z-min: 0;

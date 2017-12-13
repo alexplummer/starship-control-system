@@ -1,0 +1,22 @@
+
+//- Index
+//- ============
+//- The homepage for the site
+
+//- Extend head of document
+extends _includes/_head
+
+//- Page vars
+block pageVars
+	- var bodyClass = 'home'
+
+//- Includes
+include ../components/Wrapper/_Wrapper
+
+//- Page content
+block content
+
+	+Wrapper
+
+	//- Under document content
+	include _includes/_under

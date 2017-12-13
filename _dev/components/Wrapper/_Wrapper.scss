@@ -1,0 +1,18 @@
+
+// Wrapper
+// ============
+// A UI container for the app
+
+.Wrapper {
+    @extend %container;
+
+    .inner {
+        @extend %row;
+
+        #app {
+            @extend %col-xs-12;
+            @extend %col-md-8;
+            @extend %col-md-offset-2;
+        }
+    }
+}

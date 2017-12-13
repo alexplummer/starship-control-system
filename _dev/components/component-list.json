@@ -1,0 +1,28 @@
+{
+    "components": [
+        {
+            "name": "Wrapper",
+            "description": "A UI container for the app"
+        },
+        {
+            "name": "Mothership",
+            "description": "The main control ship in the fleet"
+        },
+        {
+            "name": "Battleship",
+            "description": "A first class war ship"
+        },
+        {
+            "name": "Carrier",
+            "description": "Controls and launches smaller ships"
+        },
+        {
+            "name": "Scout",
+            "description": "A small ship used as a lookout"
+        },
+        {
+            "name": "ScanningVessel",
+            "description": "Performs scans deep into space"
+        }
+    ]
+}
