@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="124px" height="201px" viewBox="0 0 124 201" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 10</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="A4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-440.000000, -3279.000000)">
+        <g id="Group-3" transform="translate(132.000000, 3172.000000)" fill-rule="nonzero">
+            <g id="Group-6" transform="translate(367.500000, 162.500000) rotate(-180.000000) translate(-367.500000, -162.500000) ">
+                <g id="Group-10" transform="translate(365.000000, 117.500000) rotate(-180.000000) translate(-365.000000, -117.500000) translate(303.000000, 17.000000)">
+                    <polygon id="XMLID_308_" fill="#DADCDB" points="50.2330097 0 38 62.2571793 49.5533981 93 75.4466019 93 87 62.2571793 74.7669903 0"></polygon>
+                    <polygon id="XMLID_297_" fill="#E8E8E8" points="50 0 38 62.2571793 49.3333333 93 62 93 62 0"></polygon>
+                    <rect id="XMLID_155_" fill="#24C3FF" x="52" y="77" width="20" height="2"></rect>
+                    <rect id="XMLID_153_" fill="#24C3FF" x="52" y="73" width="20" height="2"></rect>
+                    <polygon id="XMLID_145_" fill="#E8E8E8" points="75 145.971741 61.9658793 158 49 145.971741 49 93 75 93"></polygon>
+                    <polygon id="XMLID_146_" fill="#DADCDB" points="76 145.971741 63 158 63 93 76 93"></polygon>
+                    <path d="M71,115 L69.5543478,110.065421 L69.4166667,110.009346 C64.2536232,108.663551 58.7463768,108.663551 53.5833333,110.009346 L53.4456522,110.065421 L52,115 C58.1268116,113.093458 64.8731884,113.093458 71,115 Z" id="XMLID_157_" fill="#FFFFFF"></path>
+                    <rect id="XMLID_305_" fill="#C9C9C9" x="97" y="167" width="8" height="7"></rect>
+                    <path d="M104,176 C104,189.828502 102.888889,201 101.5,201 C100.111111,201 99,189.828502 99,176 L104,176 Z" id="XMLID_303_" fill="#24C3FF"></path>
+                    <rect id="XMLID_302_" fill="#C9C9C9" x="108" y="157" width="8" height="7"></rect>
+                    <path d="M115,167 C115,180.828502 113.888889,192 112.5,192 C111.111111,192 110,180.828502 110,167 L115,167 Z" id="XMLID_301_" fill="#24C3FF"></path>
+                    <path d="M109,72.147651 L109,87.852349 C109,88.4563758 108.368421,89 107.5,89 C106.710526,89 106,88.5167785 106,87.852349 L106,72.147651 C106,71.5436242 106.631579,71 107.5,71 C108.289474,71.0604027 109,71.5436242 109,72.147651 Z" id="XMLID_262_" fill="#C9C9C9"></path>
+                    <path d="M118,77.147651 L118,92.852349 C118,93.4563758 117.368421,94 116.5,94 C115.710526,94 115,93.5167785 115,92.852349 L115,77.147651 C115,76.5436242 115.631579,76 116.5,76 C117.368421,76 118,76.5436242 118,77.147651 Z" id="XMLID_264_" fill="#C9C9C9"></path>
+                    <polygon id="XMLID_282_" fill="#24C3FF" points="103 120 103 171 112 164.498246 112 120"></polygon>
+                    <polygon id="XMLID_258_" fill="#C9C9C9" points="110 115 110 166 119 159.498246 119 115"></polygon>
+                    <polygon id="XMLID_254_" fill="#C9C9C9" points="76 112 95 119.140127 95 131 76 131"></polygon>
+                    <polygon id="XMLID_256_" fill="#DADCDB" points="94 79 94 178 102.724832 171.475816 102.724832 134.425635 124 115.451632 124 84.6263603"></polygon>
+                    <polygon id="XMLID_113_" fill="#C9C9C9" points="97.6130031 161 97 161 97 132.414516 118.386997 113.675806 118.386997 87 119 87 119 113.854839 97.6130031 132.653226"></polygon>
+                    <rect id="XMLID_245_" fill="#C9C9C9" x="112" y="95" width="8" height="2"></rect>
+                    <rect id="XMLID_260_" fill="#C9C9C9" x="112" y="99" width="8" height="2"></rect>
+                    <rect id="XMLID_289_" fill="#C9C9C9" x="20" y="167" width="8" height="7"></rect>
+                    <path d="M22,176 C22,189.828502 23.1111111,201 24.5,201 C25.8888889,201 27,189.828502 27,176 L22,176 Z" id="XMLID_288_" fill="#24C3FF"></path>
+                    <rect id="XMLID_287_" fill="#C9C9C9" x="9" y="157" width="8" height="7"></rect>
+                    <path d="M11,167 C11,180.828502 12.1111111,192 13.5,192 C14.8888889,192 16,180.828502 16,167 L11,167 Z" id="XMLID_286_" fill="#24C3FF"></path>
+                    <path d="M16,72.147651 L16,87.852349 C16,88.4563758 16.6315789,89 17.5,89 C18.2894737,89 19,88.5167785 19,87.852349 L19,72.147651 C19,71.5436242 18.3684211,71 17.5,71 C16.7105263,71.0604027 16,71.5436242 16,72.147651 Z" id="XMLID_284_" fill="#C9C9C9"></path>
+                    <path d="M7,77.147651 L7,92.852349 C7,93.4563758 7.63157895,94 8.5,94 C9.28947368,94 10,93.5167785 10,92.852349 L10,77.147651 C10,76.5436242 9.36842105,76 8.5,76 C7.63157895,76 7,76.5436242 7,77.147651 Z" id="XMLID_281_" fill="#C9C9C9"></path>
+                    <polygon id="XMLID_274_" fill="#24C3FF" points="24 120 24 171 15 164.498246 15 120"></polygon>
+                    <polygon id="XMLID_273_" fill="#C9C9C9" points="16 115 16 166 7 159.498246 7 115"></polygon>
+                    <polygon id="XMLID_272_" fill="#C9C9C9" points="50 112 31 119.140127 31 131 50 131"></polygon>
+                    <polygon id="XMLID_271_" fill="#DADCDB" points="30 79 30 178 21.2751678 171.475816 21.2751678 134.425635 0 115.451632 0 84.6263603"></polygon>
+                    <polygon id="XMLID_112_" fill="#C9C9C9" points="28 161 27.3888889 161 27.3888889 132.653226 6 113.854839 6 87 6.67901235 87 6.67901235 113.675806 28 132.414516"></polygon>
+                    <rect id="XMLID_269_" fill="#C9C9C9" x="6" y="95" width="8" height="2"></rect>
+                    <rect id="XMLID_268_" fill="#C9C9C9" x="6" y="99" width="8" height="2"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

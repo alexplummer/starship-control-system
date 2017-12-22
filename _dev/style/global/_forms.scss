@@ -5,9 +5,26 @@
 
 form {
     @extend .pure-form;
+    box-shadow: 0 0 $size-m 0 fade-out($clr-primary, .7);
+    background: fade-out($clr-dark, .4);
+    padding: $size-s;
+    border: 1px solid fade-out($clr-primary, .7);
 
+    label {
+        font-family: $font-header;
+        display: block;
+    }
     input[type="text"] {
         line-height: $font-baseline;
         padding: $size-s $size-xs;
+        background: none;
+        border: 1px solid $clr-primary;
+        border-radius: 0;
+        box-shadow: none;
+        margin-right: $size-m;
+    }
+    input[type="submit"] {
+        color: $clr-dark;
+        border-radius: 0;
     }
 }

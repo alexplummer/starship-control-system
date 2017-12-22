@@ -1796,6 +1796,16 @@ section, body > header, .header-main header, body > footer, .Wrapper {
 a.icon:before {
   text-decoration: none; }
 
+/* 
+Properties used
+===============
+$background          - The background colour the text is on
+$color               - The color of the text
+$outline-width       - How much of an outline to show around text
+$underline-thickness - How thick the underline should be
+$underline-position  - How high up the text the underline should be
+$outline-above       - Also display the outline above the text, looks good if underline is low
+*/
 /*!
 Animate.css - http://daneden.me/animate
 Licensed under the MIT license - http://opensource.org/licenses/MIT
@@ -1855,8 +1865,8 @@ body {
 
 @font-face {
   font-family: 'fontello';
-  src: url("../font/fontello.eot?14854739");
-  src: url("../font/fontello.eot?14854739#iefix") format("embedded-opentype"), url("../font/fontello.woff2?14854739") format("woff2"), url("../font/fontello.woff?14854739") format("woff"), url("../font/fontello.ttf?14854739") format("truetype"), url("../font/fontello.svg?14854739#fontello") format("svg");
+  src: url("../font/fontello.eot?12834800");
+  src: url("../font/fontello.eot?12834800#iefix") format("embedded-opentype"), url("../font/fontello.woff2?12834800") format("woff2"), url("../font/fontello.woff?12834800") format("woff"), url("../font/fontello.ttf?12834800") format("truetype"), url("../font/fontello.svg?12834800#fontello") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -1866,7 +1876,7 @@ body {
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'fontello';
-    src: url('../font/fontello.svg?14854739#fontello') format('svg');
+    src: url('../font/fontello.svg?12834800#fontello') format('svg');
   }
 }
 */
@@ -1945,118 +1955,18 @@ body, html {
   background: #141D2B;
   overflow-x: hidden; }
 
+body {
+  background: url(../img/bg-space.jpg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+
 * {
   -webkit-tap-highlight-color: transparent;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden; }
 
-.Carrier, .Battleship, .Mothership, .ScanningVessel, .Scout {
-  background: #243B5A;
-  padding: 1.6875rem;
-  margin: 1.6875rem 0;
-  position: relative; }
-  .Carrier h1, .Battleship h1, .Mothership h1, .ScanningVessel h1, .Scout h1 {
-    color: rgba(250, 250, 250, 0.9); }
-  .Carrier h2, .Battleship h2, .Mothership h2, .ScanningVessel h2, .Scout h2 {
-    color: rgba(250, 250, 250, 0.9); }
-  .Carrier h3, .Battleship h3, .Mothership h3, .ScanningVessel h3, .Scout h3 {
-    color: rgba(250, 250, 250, 0.9); }
-  .Carrier h4, .Battleship h4, .Mothership h4, .ScanningVessel h4, .Scout h4 {
-    color: rgba(250, 250, 250, 0.9); }
-  .Carrier h5, .Battleship h5, .Mothership h5, .ScanningVessel h5, .Scout h5 {
-    color: rgba(250, 250, 250, 0.9); }
-  .Carrier h6, .Battleship h6, .Mothership h6, .ScanningVessel h6, .Scout h6 {
-    color: rgba(250, 250, 250, 0.9); }
-  .Carrier p, .Battleship p, .Mothership p, .ScanningVessel p, .Scout p {
-    color: rgba(250, 250, 250, 0.9); }
-  .Carrier a, .Battleship a, .Mothership a, .ScanningVessel a, .Scout a {
-    color: rgba(250, 250, 250, 0.9); }
-  .Carrier li, .Battleship li, .Mothership li, .ScanningVessel li, .Scout li {
-    color: rgba(250, 250, 250, 0.9); }
-  .Carrier label, .Battleship label, .Mothership label, .ScanningVessel label, .Scout label {
-    color: rgba(250, 250, 250, 0.9); }
-  .Carrier button, .Battleship button, .Mothership button, .ScanningVessel button, .Scout button {
-    color: rgba(250, 250, 250, 0.9); }
-  .Carrier input, .Battleship input, .Mothership input, .ScanningVessel input, .Scout input {
-    color: rgba(250, 250, 250, 0.9); }
-  .Carrier textarea, .Battleship textarea, .Mothership textarea, .ScanningVessel textarea, .Scout textarea {
-    color: rgba(250, 250, 250, 0.9); }
-  .Carrier legend, .Battleship legend, .Mothership legend, .ScanningVessel legend, .Scout legend {
-    color: rgba(250, 250, 250, 0.9); }
-  .Carrier button, .Battleship button, .Mothership button, .ScanningVessel button, .Scout button {
-    color: rgba(250, 250, 250, 0.9); }
-  .Carrier select, .Battleship select, .Mothership select, .ScanningVessel select, .Scout select {
-    color: rgba(250, 250, 250, 0.9); }
-  .Carrier blockquote, .Battleship blockquote, .Mothership blockquote, .ScanningVessel blockquote, .Scout blockquote {
-    color: rgba(250, 250, 250, 0.9); }
-  .Carrier dt, .Battleship dt, .Mothership dt, .ScanningVessel dt, .Scout dt {
-    color: rgba(250, 250, 250, 0.9); }
-  .Carrier dd, .Battleship dd, .Mothership dd, .ScanningVessel dd, .Scout dd {
-    color: rgba(250, 250, 250, 0.9); }
-  .Carrier figure, .Battleship figure, .Mothership figure, .ScanningVessel figure, .Scout figure {
-    color: rgba(250, 250, 250, 0.9); }
-  .Carrier figcaption, .Battleship figcaption, .Mothership figcaption, .ScanningVessel figcaption, .Scout figcaption {
-    color: rgba(250, 250, 250, 0.9); }
-  .Carrier address, .Battleship address, .Mothership address, .ScanningVessel address, .Scout address {
-    color: rgba(250, 250, 250, 0.9); }
-  .Carrier ul, .Battleship ul, .Mothership ul, .ScanningVessel ul, .Scout ul {
-    color: rgba(250, 250, 250, 0.9); }
-  .Carrier ol, .Battleship ol, .Mothership ol, .ScanningVessel ol, .Scout ol {
-    color: rgba(250, 250, 250, 0.9); }
-  .Carrier strong, .Battleship strong, .Mothership strong, .ScanningVessel strong, .Scout strong {
-    color: rgba(250, 250, 250, 0.9); }
-  .Carrier b, .Battleship b, .Mothership b, .ScanningVessel b, .Scout b {
-    color: rgba(250, 250, 250, 0.9); }
-  .Carrier br, .Battleship br, .Mothership br, .ScanningVessel br, .Scout br {
-    color: rgba(250, 250, 250, 0.9); }
-  .Carrier span, .Battleship span, .Mothership span, .ScanningVessel span, .Scout span {
-    color: rgba(250, 250, 250, 0.9); }
-  .Carrier table, .Battleship table, .Mothership table, .ScanningVessel table, .Scout table {
-    color: rgba(250, 250, 250, 0.9); }
-  .Carrier th, .Battleship th, .Mothership th, .ScanningVessel th, .Scout th {
-    color: rgba(250, 250, 250, 0.9); }
-  .Carrier td, .Battleship td, .Mothership td, .ScanningVessel td, .Scout td {
-    color: rgba(250, 250, 250, 0.9); }
-  .Carrier code, .Battleship code, .Mothership code, .ScanningVessel code, .Scout code {
-    color: rgba(250, 250, 250, 0.9); }
-  .Carrier time, .Battleship time, .Mothership time, .ScanningVessel time, .Scout time {
-    color: rgba(250, 250, 250, 0.9); }
-  .Carrier img, .Battleship img, .Mothership img, .ScanningVessel img, .Scout img {
-    color: rgba(250, 250, 250, 0.9); }
-  .Carrier form, .Battleship form, .Mothership form, .ScanningVessel form, .Scout form {
-    color: rgba(250, 250, 250, 0.9); }
-  .Carrier strong, .Battleship strong, .Mothership strong, .ScanningVessel strong, .Scout strong {
-    position: relative; }
-    .Carrier strong:before, .Battleship strong:before, .Mothership strong:before, .ScanningVessel strong:before, .Scout strong:before {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 100%; }
-
-.Carrier, .Battleship, .Mothership, .ScanningVessel, .Scout {
-  clip-path: polygon(20px 0%, 100% 0%, 100% 20px, 100% calc(100% - 20px), calc(100% - 20px) 100%, 20px 100%, 0% 100%, 0% 20px);
-  box-shadow: inset 1px 1px 1px rgba(250, 250, 250, 0.2), inset -1px -1px 1px rgba(250, 250, 250, 0.2); }
-  .Carrier:before, .Battleship:before, .Mothership:before, .ScanningVessel:before, .Scout:before {
-    content: "";
-    width: 1px;
-    height: 26.66667px;
-    background: rgba(250, 250, 250, 0.2);
-    position: absolute;
-    top: -3px;
-    left: 10px;
-    transform: rotate(45deg); }
-  .Carrier:after, .Battleship:after, .Mothership:after, .ScanningVessel:after, .Scout:after {
-    content: "";
-    width: 1px;
-    height: 26.66667px;
-    background: rgba(250, 250, 250, 0.2);
-    position: absolute;
-    bottom: -3px;
-    right: 10px;
-    transform: rotate(45deg); }
-
-.Carrier strong:before, .Battleship strong:before, .Mothership strong:before, .ScanningVessel strong:before, .Scout strong:before {
-  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAG0lEQVQYV2NkPfs/jQENMIIEfxszzkIWp1AQAOecEj2uGRJ1AAAAAElFTkSuQmCC) repeat; }
+div.Battleship h1:before, .Mothership h1:before, .Carrier h1:before, .ScanningVessel h1:before, .Scout h1:before, div.Battleship h2:before, .Mothership h2:before, .Carrier h2:before, .ScanningVessel h2:before, .Scout h2:before, div.Battleship h3:before, .Mothership h3:before, .Carrier h3:before, .ScanningVessel h3:before, .Scout h3:before, div.Battleship h4:before, .Mothership h4:before, .Carrier h4:before, .ScanningVessel h4:before, .Scout h4:before {
+  background: #243B5A url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAG0lEQVQYV2NkPfs/jQENMIIEfxszzkIWp1AQAOecEj2uGRJ1AAAAAElFTkSuQmCC) repeat; }
 
 p {
   font-weight: 300; }
@@ -2064,11 +1974,187 @@ p {
 strong {
   font-weight: 700; }
 
-form input[type="text"] {
-  line-height: 1.6875rem;
-  padding: 0.84375rem 0.42188rem; }
+form {
+  box-shadow: 0 0 1.6875rem 0 rgba(124, 207, 253, 0.3);
+  background: rgba(36, 59, 90, 0.6);
+  padding: 0.84375rem;
+  border: 1px solid rgba(124, 207, 253, 0.3); }
+  form label {
+    font-family: "Unica One", sans-serif;
+    display: block; }
+  form input[type="text"] {
+    line-height: 1.6875rem;
+    padding: 0.84375rem 0.42188rem;
+    background: none;
+    border: 1px solid #7CCFFD;
+    border-radius: 0;
+    box-shadow: none;
+    margin-right: 1.6875rem; }
+  form input[type="submit"] {
+    color: #243B5A;
+    border-radius: 0; }
 
 /* inject:componentImports */
+div.Battleship h2:after {
+  background-image: url(../img/media/battleship.svg); }
+
+div.Battleship, .Mothership, .Carrier, .ScanningVessel, .Scout {
+  clip-path: polygon(20px 0%, 100% 0%, 100% 20px, 100% calc(100% - 20px), calc(100% - 20px) 100%, 20px 100%, 0% 100%, 0% 20px);
+  box-shadow: inset 1px 1px 0 1px rgba(124, 207, 253, 0.3), inset -1px -1px 0 1px rgba(124, 207, 253, 0.3);
+  background: #243B5A;
+  padding: 1.6875rem;
+  margin: 1.6875rem 0;
+  position: relative;
+  min-height: 23.625rem; }
+  div.Battleship:before, .Mothership:before, .Carrier:before, .ScanningVessel:before, .Scout:before {
+    content: "";
+    width: 2px;
+    height: 26.66667px;
+    background: rgba(124, 207, 253, 0.3);
+    position: absolute;
+    top: -3px;
+    left: 10px;
+    transform: rotate(45deg); }
+  div.Battleship:after, .Mothership:after, .Carrier:after, .ScanningVessel:after, .Scout:after {
+    content: "";
+    width: 2px;
+    height: 26.66667px;
+    background: rgba(124, 207, 253, 0.3);
+    position: absolute;
+    bottom: -3px;
+    right: 10px;
+    transform: rotate(45deg); }
+  div.Battleship h1, .Mothership h1, .Carrier h1, .ScanningVessel h1, .Scout h1 {
+    color: rgba(250, 250, 250, 0.9); }
+  div.Battleship h2, .Mothership h2, .Carrier h2, .ScanningVessel h2, .Scout h2 {
+    color: rgba(250, 250, 250, 0.9); }
+  div.Battleship h3, .Mothership h3, .Carrier h3, .ScanningVessel h3, .Scout h3 {
+    color: rgba(250, 250, 250, 0.9); }
+  div.Battleship h4, .Mothership h4, .Carrier h4, .ScanningVessel h4, .Scout h4 {
+    color: rgba(250, 250, 250, 0.9); }
+  div.Battleship h5, .Mothership h5, .Carrier h5, .ScanningVessel h5, .Scout h5 {
+    color: rgba(250, 250, 250, 0.9); }
+  div.Battleship h6, .Mothership h6, .Carrier h6, .ScanningVessel h6, .Scout h6 {
+    color: rgba(250, 250, 250, 0.9); }
+  div.Battleship p, .Mothership p, .Carrier p, .ScanningVessel p, .Scout p {
+    color: rgba(250, 250, 250, 0.9); }
+  div.Battleship a, .Mothership a, .Carrier a, .ScanningVessel a, .Scout a {
+    color: rgba(250, 250, 250, 0.9); }
+  div.Battleship li, .Mothership li, .Carrier li, .ScanningVessel li, .Scout li {
+    color: rgba(250, 250, 250, 0.9); }
+  div.Battleship label, .Mothership label, .Carrier label, .ScanningVessel label, .Scout label {
+    color: rgba(250, 250, 250, 0.9); }
+  div.Battleship button, .Mothership button, .Carrier button, .ScanningVessel button, .Scout button {
+    color: rgba(250, 250, 250, 0.9); }
+  div.Battleship input, .Mothership input, .Carrier input, .ScanningVessel input, .Scout input {
+    color: rgba(250, 250, 250, 0.9); }
+  div.Battleship textarea, .Mothership textarea, .Carrier textarea, .ScanningVessel textarea, .Scout textarea {
+    color: rgba(250, 250, 250, 0.9); }
+  div.Battleship legend, .Mothership legend, .Carrier legend, .ScanningVessel legend, .Scout legend {
+    color: rgba(250, 250, 250, 0.9); }
+  div.Battleship button, .Mothership button, .Carrier button, .ScanningVessel button, .Scout button {
+    color: rgba(250, 250, 250, 0.9); }
+  div.Battleship select, .Mothership select, .Carrier select, .ScanningVessel select, .Scout select {
+    color: rgba(250, 250, 250, 0.9); }
+  div.Battleship blockquote, .Mothership blockquote, .Carrier blockquote, .ScanningVessel blockquote, .Scout blockquote {
+    color: rgba(250, 250, 250, 0.9); }
+  div.Battleship dt, .Mothership dt, .Carrier dt, .ScanningVessel dt, .Scout dt {
+    color: rgba(250, 250, 250, 0.9); }
+  div.Battleship dd, .Mothership dd, .Carrier dd, .ScanningVessel dd, .Scout dd {
+    color: rgba(250, 250, 250, 0.9); }
+  div.Battleship figure, .Mothership figure, .Carrier figure, .ScanningVessel figure, .Scout figure {
+    color: rgba(250, 250, 250, 0.9); }
+  div.Battleship figcaption, .Mothership figcaption, .Carrier figcaption, .ScanningVessel figcaption, .Scout figcaption {
+    color: rgba(250, 250, 250, 0.9); }
+  div.Battleship address, .Mothership address, .Carrier address, .ScanningVessel address, .Scout address {
+    color: rgba(250, 250, 250, 0.9); }
+  div.Battleship ul, .Mothership ul, .Carrier ul, .ScanningVessel ul, .Scout ul {
+    color: rgba(250, 250, 250, 0.9); }
+  div.Battleship ol, .Mothership ol, .Carrier ol, .ScanningVessel ol, .Scout ol {
+    color: rgba(250, 250, 250, 0.9); }
+  div.Battleship strong, .Mothership strong, .Carrier strong, .ScanningVessel strong, .Scout strong {
+    color: rgba(250, 250, 250, 0.9); }
+  div.Battleship b, .Mothership b, .Carrier b, .ScanningVessel b, .Scout b {
+    color: rgba(250, 250, 250, 0.9); }
+  div.Battleship br, .Mothership br, .Carrier br, .ScanningVessel br, .Scout br {
+    color: rgba(250, 250, 250, 0.9); }
+  div.Battleship span, .Mothership span, .Carrier span, .ScanningVessel span, .Scout span {
+    color: rgba(250, 250, 250, 0.9); }
+  div.Battleship table, .Mothership table, .Carrier table, .ScanningVessel table, .Scout table {
+    color: rgba(250, 250, 250, 0.9); }
+  div.Battleship th, .Mothership th, .Carrier th, .ScanningVessel th, .Scout th {
+    color: rgba(250, 250, 250, 0.9); }
+  div.Battleship td, .Mothership td, .Carrier td, .ScanningVessel td, .Scout td {
+    color: rgba(250, 250, 250, 0.9); }
+  div.Battleship code, .Mothership code, .Carrier code, .ScanningVessel code, .Scout code {
+    color: rgba(250, 250, 250, 0.9); }
+  div.Battleship time, .Mothership time, .Carrier time, .ScanningVessel time, .Scout time {
+    color: rgba(250, 250, 250, 0.9); }
+  div.Battleship img, .Mothership img, .Carrier img, .ScanningVessel img, .Scout img {
+    color: rgba(250, 250, 250, 0.9); }
+  div.Battleship form, .Mothership form, .Carrier form, .ScanningVessel form, .Scout form {
+    color: rgba(250, 250, 250, 0.9); }
+  div.Battleship p, .Mothership p, .Carrier p, .ScanningVessel p, .Scout p {
+    line-height: .1;
+    width: 40%; }
+    div.Battleship p.description, .Mothership p.description, .Carrier p.description, .ScanningVessel p.description, .Scout p.description {
+      line-height: 1.3;
+      font-size: 1.40625rem;
+      margin-bottom: 3.375rem; }
+  div.Battleship strong, .Mothership strong, .Carrier strong, .ScanningVessel strong, .Scout strong {
+    font-family: "Unica One", sans-serif;
+    padding: 0 0 0.42188rem 0;
+    margin: 0 0 0.42188rem 0;
+    display: inline-block;
+    color: #7CCFFD;
+    border-bottom: 1px solid #7CCFFD; }
+  div.Battleship span, .Mothership span, .Carrier span, .ScanningVessel span, .Scout span {
+    text-transform: capitalize;
+    padding: 0;
+    margin: 0;
+    display: block; }
+  div.Battleship h1, .Mothership h1, .Carrier h1, .ScanningVessel h1, .Scout h1, div.Battleship h2, .Mothership h2, .Carrier h2, .ScanningVessel h2, .Scout h2, div.Battleship h3, .Mothership h3, .Carrier h3, .ScanningVessel h3, .Scout h3, div.Battleship h4, .Mothership h4, .Carrier h4, .ScanningVessel h4, .Scout h4 {
+    text-shadow: 0 0 15px #009DC9;
+    border-right: 1px solid #7CCFFD;
+    border-bottom: 1px solid #7CCFFD;
+    padding-right: 0.84375rem;
+    padding-bottom: 0.84375rem;
+    margin-bottom: 1.6875rem;
+    display: inline-block; }
+    div.Battleship h1:before, .Mothership h1:before, .Carrier h1:before, .ScanningVessel h1:before, .Scout h1:before, div.Battleship h2:before, .Mothership h2:before, .Carrier h2:before, .ScanningVessel h2:before, .Scout h2:before, div.Battleship h3:before, .Mothership h3:before, .Carrier h3:before, .ScanningVessel h3:before, .Scout h3:before, div.Battleship h4:before, .Mothership h4:before, .Carrier h4:before, .ScanningVessel h4:before, .Scout h4:before {
+      content: "";
+      opacity: .3;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: -1; }
+    div.Battleship h1:after, .Mothership h1:after, .Carrier h1:after, .ScanningVessel h1:after, .Scout h1:after, div.Battleship h2:after, .Mothership h2:after, .Carrier h2:after, .ScanningVessel h2:after, .Scout h2:after, div.Battleship h3:after, .Mothership h3:after, .Carrier h3:after, .ScanningVessel h3:after, .Scout h3:after, div.Battleship h4:after, .Mothership h4:after, .Carrier h4:after, .ScanningVessel h4:after, .Scout h4:after {
+      content: "";
+      position: absolute;
+      width: 50%;
+      height: 13.5rem;
+      top: 6.75rem;
+      right: 1.6875rem;
+      background-position: center;
+      background-repeat: no-repeat; }
+
+.Mothership h1:after {
+  background-image: url(../img/media/mothership.svg); }
+
+.Carrier h3:after {
+  background-image: url(../img/media/carrier.svg);
+  height: 13.5rem; }
+
+.ScanningVessel h4:after {
+  background-image: url(../img/media/scanning-vessel.svg);
+  height: 10.125rem; }
+
+.Scout h4:after {
+  background-image: url(../img/media/scout.svg);
+  height: 6.75rem; }
+
 /* endinjectComponent */
 
 /*# sourceMappingURL=style.css.map */

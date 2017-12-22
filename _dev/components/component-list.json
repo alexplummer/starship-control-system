@@ -5,6 +5,10 @@
             "description": "A UI container for the app"
         },
         {
+            "name": "Card",
+            "description": "Bordered wrapper for each ship"
+        },
+        {
             "name": "Mothership",
             "description": "The main control ship in the fleet"
         },

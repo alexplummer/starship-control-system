@@ -37,9 +37,10 @@ class ScanningVessel extends React.Component {
         return (
             <div className="ScanningVessel">
                 <h4>Scanning Vessel</h4>
-                <p><strong>Scan results:</strong> {this.state.scanResults.activity}</p>
-                <p><strong>Fleet report:</strong> {this.props.fleetReports}</p>
-                <hr />
+                <p className="description">Performs scans deep into space.</p>
+                <p><strong>Scan results:</strong> <span>{this.state.scanResults.activity}</span></p>
+                <p><strong>Fleet report:</strong> <span>{this.props.fleetReports}</span></p>
+
                 <form onSubmit={this.reportToCarrier}>
                     <label>Send alert</label>
                     <input 

@@ -1,60 +1,8 @@
 
 // Patterns
 // ============
-// Global patterns and mixins go in here
-
-%card {
-    @extend %bevel;
-    background: $clr-dark;
-    padding: $size-m;
-    margin: $size-m 0;
-    position: relative;
-
-    @each $el in $type-all-els {
-        #{$el} {
-            color: rgba(250,250,250,.9);
-        }
-    }
-    strong {
-        position: relative;
-
-        &:before {
-            @extend %bg-grid;
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 100%;
-        }
-    }
-}
-
-%bevel {
-    $bevel-amount: 20px;
-    clip-path: polygon($bevel-amount 0%, 100% 0%, 100% $bevel-amount, 100% calc(100% - #{$bevel-amount}), calc(100% - #{$bevel-amount}) 100%, $bevel-amount 100%, 0% 100%, 0% $bevel-amount);
-    box-shadow: inset 1px 1px 1px rgba(250,250,250,.2), inset -1px -1px 1px rgba(250,250,250,.2);
-
-    &:before {
-        content: "";
-        width: 1px;
-        height: $bevel-amount / .75;
-        background: rgba(250,250,250,.2);
-        position: absolute;
-        top: -3px;
-        left: $bevel-amount / 2;
-        transform: rotate(45deg);
-    }
-    &:after {
-        content: "";
-        width: 1px;
-        height: $bevel-amount / .75;
-        background: rgba(250,250,250,.2);
-        position: absolute;
-        bottom: -3px;
-        right: $bevel-amount / 2;
-        transform: rotate(45deg);
-    }
-}
+// Smaller global patterns and mixins go in here
 
 %bg-grid {
-    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAG0lEQVQYV2NkPfs/jQENMIIEfxszzkIWp1AQAOecEj2uGRJ1AAAAAElFTkSuQmCC) repeat;
+    background: $clr-dark url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAG0lEQVQYV2NkPfs/jQENMIIEfxszzkIWp1AQAOecEj2uGRJ1AAAAAElFTkSuQmCC) repeat;
 }

@@ -21,6 +21,8 @@
 @import "library/mixins/_grid";
 @import "library/mixins/_iconfix";
 @import "library/mixins/_shadows";
+@import "library/mixins/_bevel-corners";
+@import "library/mixins/_smart-underline";
 // csslint ignore:end 
 
 
@@ -64,9 +66,10 @@
 // User components, these are auto injected by Gulp when saved to folder
 
 /* inject:componentImports */
-@import "../components/Carrier/_Carrier.scss";
 @import "../components/Battleship/_Battleship.scss";
+@import "../components/Card/_Card.scss";
 @import "../components/Mothership/_Mothership.scss";
+@import "../components/Carrier/_Carrier.scss";
 @import "../components/ScanningVessel/_ScanningVessel.scss";
 @import "../components/Scout/_Scout.scss";
 @import "../components/Wrapper/_Wrapper.scss";

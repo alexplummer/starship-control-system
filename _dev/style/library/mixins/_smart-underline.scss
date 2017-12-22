@@ -1,0 +1,57 @@
+
+// Smart underline
+// ============
+// Better looking text decoration
+// See here: http://alexplummer.com/article/code-snippets/better-looking-text-decoration.html
+
+/* 
+Properties used
+===============
+$background          - The background colour the text is on
+$color               - The color of the text
+$outline-width       - How much of an outline to show around text
+$underline-thickness - How thick the underline should be
+$underline-position  - How high up the text the underline should be
+$outline-above       - Also display the outline above the text, looks good if underline is low
+*/
+
+@mixin nice-underline($background, $color, $outline-width, $underline-thickness, $underline-position, $outline-above) {
+    display: inline;
+    color: $color; // Create outline
+    $value: ();
+
+    @for $i from 1 through $outline-width {
+        $num: $i + px;
+        $numNeg: ($i*-1) + px;
+        $XShadow: $num 0 $background;
+        $XShadowNeg: $numNeg 0 $background;
+        $YShadow: 0 $num $background;
+        $YShadowNeg: 0 $numNeg $background;
+        $TLShadow: $numNeg $numNeg $background;
+        $TRShadow: $num $numNeg $background;
+        $BLShadow: $numNeg $num $background;
+        $BRShadow: $num $num $background;
+        $value: append($value, $XShadow, comma);
+        $value: append($value, $XShadowNeg, comma);
+        $value: append($value, $YShadow, comma);
+        $value: append($value, $BLShadow, comma);
+        $value: append($value, $BRShadow, comma);
+
+        @if $outline-above {
+            $value: append($value, $YShadowNeg, comma);
+            $value: append($value, $TLShadow, comma);
+            $value: append($value, $TRShadow, comma);
+        }
+    }
+
+    text-shadow: $value; 
+    
+    // Create underline
+    box-shadow: inset 0 (($underline-position * -1px) + $underline-thickness) 0 0 $background, inset 0 ($underline-position * -1px) 0 0 $color; 
+    
+    // Mobile fix
+    @media (max-width: 991px) {
+        box-shadow: none;
+        text-decoration: underline;
+    }
+}

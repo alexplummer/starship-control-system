@@ -17793,6 +17793,11 @@ var Scout = function (_React$Component) {
                 ),
                 react.createElement(
                     "p",
+                    { className: "description" },
+                    "A small ship used as a lookout."
+                ),
+                react.createElement(
+                    "p",
                     null,
                     react.createElement(
                         "strong",
@@ -17800,7 +17805,11 @@ var Scout = function (_React$Component) {
                         "Scout report:"
                     ),
                     " ",
-                    this.state.scoutReport.activity
+                    react.createElement(
+                        "span",
+                        null,
+                        this.state.scoutReport.activity
+                    )
                 ),
                 react.createElement(
                     "p",
@@ -17811,9 +17820,12 @@ var Scout = function (_React$Component) {
                         "Fleet report:"
                     ),
                     " ",
-                    this.props.fleetReports
+                    react.createElement(
+                        "span",
+                        null,
+                        this.props.fleetReports
+                    )
                 ),
-                react.createElement("hr", null),
                 react.createElement(
                     "form",
                     { onSubmit: this.reportToCarrier },
@@ -17887,6 +17899,11 @@ var ScanningVessel = function (_React$Component) {
                 ),
                 react.createElement(
                     "p",
+                    { className: "description" },
+                    "Performs scans deep into space."
+                ),
+                react.createElement(
+                    "p",
                     null,
                     react.createElement(
                         "strong",
@@ -17894,7 +17911,11 @@ var ScanningVessel = function (_React$Component) {
                         "Scan results:"
                     ),
                     " ",
-                    this.state.scanResults.activity
+                    react.createElement(
+                        "span",
+                        null,
+                        this.state.scanResults.activity
+                    )
                 ),
                 react.createElement(
                     "p",
@@ -17905,9 +17926,12 @@ var ScanningVessel = function (_React$Component) {
                         "Fleet report:"
                     ),
                     " ",
-                    this.props.fleetReports
+                    react.createElement(
+                        "span",
+                        null,
+                        this.props.fleetReports
+                    )
                 ),
-                react.createElement("hr", null),
                 react.createElement(
                     "form",
                     { onSubmit: this.reportToCarrier },
@@ -17948,21 +17972,23 @@ var Carrier = function (_React$Component) {
                 activity: "no reports"
             }
         };
+        _this.alertFleet = _this.alertFleet.bind(_this);
         return _this;
     }
 
     createClass(Carrier, [{
+        key: 'alertFleet',
+        value: function alertFleet(message) {
+
+            this.setState({
+                fleetReports: {
+                    activity: message
+                }
+            });
+        }
+    }, {
         key: 'render',
         value: function render() {
-            function alertFleet(message) {
-                console.log(message);
-
-                this.setState({
-                    fleetReports: {
-                        activity: message
-                    }
-                });
-            }
 
             return react.createElement(
                 'div',
@@ -17977,6 +18003,11 @@ var Carrier = function (_React$Component) {
                     ),
                     react.createElement(
                         'p',
+                        { className: 'description' },
+                        'Controls smaller ships.'
+                    ),
+                    react.createElement(
+                        'p',
                         null,
                         react.createElement(
                             'strong',
@@ -17984,7 +18015,11 @@ var Carrier = function (_React$Component) {
                             'Fleet reports:'
                         ),
                         ' ',
-                        this.state.fleetReports.activity
+                        react.createElement(
+                            'span',
+                            null,
+                            this.state.fleetReports.activity
+                        )
                     ),
                     react.createElement(
                         'p',
@@ -17995,11 +18030,15 @@ var Carrier = function (_React$Component) {
                             'Orders:'
                         ),
                         ' ',
-                        this.props.orders.carrier
+                        react.createElement(
+                            'span',
+                            null,
+                            this.props.orders.carrier
+                        )
                     )
                 ),
-                react.createElement(Scout, { sendAlert: alertFleet.bind(this), fleetReports: this.state.fleetReports.activity }),
-                react.createElement(ScanningVessel, { sendAlert: alertFleet.bind(this), fleetReports: this.state.fleetReports.activity })
+                react.createElement(Scout, { sendAlert: this.alertFleet, fleetReports: this.state.fleetReports.activity }),
+                react.createElement(ScanningVessel, { sendAlert: this.alertFleet, fleetReports: this.state.fleetReports.activity })
             );
         }
     }]);
@@ -18056,6 +18095,11 @@ var Battleship = function (_React$Component) {
                     ),
                     react.createElement(
                         'p',
+                        { className: 'description' },
+                        'A first class war ship.'
+                    ),
+                    react.createElement(
+                        'p',
                         null,
                         react.createElement(
                             'strong',
@@ -18063,7 +18107,11 @@ var Battleship = function (_React$Component) {
                             'Defences:'
                         ),
                         ' ',
-                        this.state.battleshipSystems.defences
+                        react.createElement(
+                            'span',
+                            null,
+                            this.state.battleshipSystems.defences
+                        )
                     ),
                     react.createElement(
                         'p',
@@ -18074,7 +18122,11 @@ var Battleship = function (_React$Component) {
                             'Orders:'
                         ),
                         ' ',
-                        this.props.orders.battleship
+                        react.createElement(
+                            'span',
+                            null,
+                            this.props.orders.battleship
+                        )
                     )
                 ),
                 react.createElement(Carrier, { orders: this.props.orders })
@@ -18125,14 +18177,22 @@ var Mothership = function (_React$Component) {
                     ),
                     react.createElement(
                         'p',
+                        { className: 'description' },
+                        'The main control ship.'
+                    ),
+                    react.createElement(
+                        'p',
                         null,
                         react.createElement(
                             'strong',
                             null,
                             'Control systems:'
                         ),
-                        ' ',
-                        this.state.motherShipSystems.controlSystems
+                        react.createElement(
+                            'span',
+                            null,
+                            this.state.motherShipSystems.controlSystems
+                        )
                     )
                 ),
                 react.createElement(Battleship, { orders: this.state.fleetOrders })

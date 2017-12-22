@@ -5,4 +5,12 @@
 
 .Carrier {
     @extend %card;
+
+    h3   {
+        
+        &:after {
+            background-image: url(../img/media/carrier.svg);
+            height: $size-xl * 2;
+        }
+    }
 }

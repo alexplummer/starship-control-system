@@ -3,6 +3,13 @@
 // ============
 // A first class war ship
 
-.Battleship {
+div.Battleship {
     @extend %card;
+
+    h2 {
+
+        &:after {
+            background-image: url(../img/media/battleship.svg);
+        }
+    }
 }

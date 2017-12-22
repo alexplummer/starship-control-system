@@ -1,0 +1,39 @@
+// Patterns
+// ============
+// Adds beveled corners
+
+@mixin bevel-corners($bevel-amount, $border-thickness, $border-color) {
+	
+	$bevel-distance: $border-thickness - 5px;
+
+	@if $border-thickness == 1px {
+		$bevel-distance: -3px;
+	}
+	@else if $border-thickness == 5px {
+		$bevel-distance: $border-thickness - 6px;
+	}
+
+    clip-path: polygon($bevel-amount 0%, 100% 0%, 100% $bevel-amount, 100% calc(100% - #{$bevel-amount}), calc(100% - #{$bevel-amount}) 100%, $bevel-amount 100%, 0% 100%, 0% $bevel-amount);
+    box-shadow: inset $border-thickness $border-thickness 0 $border-thickness $border-color, inset ($border-thickness * -1) ($border-thickness * -1) 0 $border-thickness $border-color;
+
+    &:before {
+        content: "";
+        width: $border-thickness * 2;
+        height: $bevel-amount / .75;
+        background: $border-color;
+        position: absolute;
+        top: $bevel-distance;
+        left: $bevel-amount / 2;
+        transform: rotate(45deg);
+    }
+    &:after {
+        content: "";
+        width: $border-thickness * 2;
+        height: $bevel-amount / .75;
+        background: $border-color;
+        position: absolute;
+        bottom: $bevel-distance;
+        right: $bevel-amount / 2;
+        transform: rotate(45deg);
+    }
+}

@@ -5,4 +5,12 @@
 
 .Scout {
     @extend %card;
+
+    h4 {
+        
+        &:after {
+            background-image: url(../img/media/scout.svg);
+            height: $size-xl;
+        }
+    }
 }

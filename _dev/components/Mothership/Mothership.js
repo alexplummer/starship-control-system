@@ -28,7 +28,8 @@ class Mothership extends React.Component {
             <div>
                 <div className="Mothership">
                     <h1>Mothership</h1>
-                    <p><strong>Control systems:</strong> {this.state.motherShipSystems.controlSystems}</p>
+                    <p className="description">The main control ship.</p>
+                    <p><strong>Control systems:</strong><span>{this.state.motherShipSystems.controlSystems}</span></p>
                 </div>
                 <Battleship orders={this.state.fleetOrders} />
             </div>

@@ -35,8 +35,9 @@ class Battleship extends React.Component {
             <div>
                 <div className="Battleship">
                     <h2>Battleship</h2>
-                    <p><strong>Defences:</strong> {this.state.battleshipSystems.defences}</p>
-                    <p><strong>Orders:</strong> {this.props.orders.battleship}</p>
+                    <p className="description">A first class war ship.</p>
+                    <p><strong>Defences:</strong> <span>{this.state.battleshipSystems.defences}</span></p>
+                    <p><strong>Orders:</strong> <span>{this.props.orders.battleship}</span></p>
                 </div>
                 <Carrier orders={this.props.orders} />
             </div>

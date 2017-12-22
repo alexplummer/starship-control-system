@@ -5,4 +5,12 @@
 
 .ScanningVessel {
     @extend %card;
+
+    h4 {
+        
+        &:after {
+            background-image: url(../img/media/scanning-vessel.svg);
+            height: $size-xl * 1.5;
+        }
+    }
 }

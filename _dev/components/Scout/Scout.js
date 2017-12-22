@@ -37,9 +37,10 @@ class Scout extends React.Component {
         return (
             <div className="Scout">
                 <h4>Scout</h4>
-                <p><strong>Scout report:</strong> {this.state.scoutReport.activity}</p>
-                <p><strong>Fleet report:</strong> {this.props.fleetReports}</p>
-                <hr />
+                <p className="description">A small ship used as a lookout.</p>
+                <p><strong>Scout report:</strong> <span>{this.state.scoutReport.activity}</span></p>
+                <p><strong>Fleet report:</strong> <span>{this.props.fleetReports}</span></p>
+
                 <form onSubmit={this.reportToCarrier}>
                     <label>Send alert</label>
                     <input 

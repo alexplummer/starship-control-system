@@ -5,4 +5,11 @@
 
 .Mothership {
     @extend %card;
+
+    h1 {
+        
+        &:after {
+            background-image: url(../img/media/mothership.svg);
+        }
+    }
 }

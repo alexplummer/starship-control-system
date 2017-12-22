@@ -18,28 +18,30 @@ class Carrier extends React.Component {
                 activity: "no reports"
             }
         }
+        this.alertFleet = this.alertFleet.bind(this);
+    }
+
+    alertFleet(message) {
+
+        this.setState({
+            fleetReports: {
+                activity: message
+            }
+        });
     }
 
     render() {
-        function alertFleet(message) {
-            console.log(message);
-
-            this.setState({
-                fleetReports: {
-                    activity: message
-                }
-            });
-        }
 
         return (
             <div>
                 <div className="Carrier">
                     <h3>Carrier</h3>
-                    <p><strong>Fleet reports:</strong> {this.state.fleetReports.activity}</p>
-                    <p><strong>Orders:</strong> {this.props.orders.carrier}</p>
+                    <p className="description">Controls smaller ships.</p>
+                    <p><strong>Fleet reports:</strong> <span>{this.state.fleetReports.activity}</span></p>
+                    <p><strong>Orders:</strong> <span>{this.props.orders.carrier}</span></p>
                 </div>
-                <Scout sendAlert={alertFleet.bind(this)} fleetReports={this.state.fleetReports.activity} />
-                <ScanningVessel sendAlert={alertFleet.bind(this)} fleetReports={this.state.fleetReports.activity} />
+                <Scout sendAlert={this.alertFleet} fleetReports={this.state.fleetReports.activity} />
+                <ScanningVessel sendAlert={this.alertFleet} fleetReports={this.state.fleetReports.activity} />
             </div>
         );
     }
